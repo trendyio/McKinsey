@@ -61,6 +61,14 @@ details[open]>summary::after{content:"\2212"}
 .check h2{font-size:18px}
 .check ul{margin:10px 0 0;padding-left:20px;list-style:disc;font-size:14px;font-weight:300}
 .check li::marker{color:var(--acc)}
+.quick{margin:0 0 26px}
+.quick h2{font-size:clamp(20px,3.4vw,26px);margin:0 0 8px}
+.quick p{color:var(--mute);margin:0 0 12px}
+.tw{overflow-x:auto}
+.quick table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}
+.quick th{text-align:left;font:600 14px/1.3 var(--hf);padding:10px 14px 10px 0;border-bottom:1px solid var(--line)}
+.quick td{padding:12px 14px 12px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.quick td:nth-child(2){font-weight:600}
 </style>
 </head>
 <body>
@@ -68,6 +76,19 @@ details[open]>summary::after{content:"\2212"}
 <p class="lab">Кейсы на оценку · 26 задач</p>
 <h1>Гайд по задачам McKinsey на оценку</h1>
 <p class="sub">В каждой вкладке: принцип решения, что учитывать, что не учитывать, и примеры из файла с решением. Цифры в примерах это допущения.</p>
+
+<section class="quick">
+<h2>Как быстро определять тип задачи</h2>
+<p>Можно запомнить очень простую логику:</p>
+<div class="tw"><table>
+<thead><tr><th>Что дано / о чём спрашивают</th><th>Тип</th><th>С чего начинать</th></tr></thead>
+<tbody>
+<tr><td>Население + какая-то активность</td><td>Количественная</td><td>Население × %</td></tr>
+<tr><td>Семьи, квартиры, бытовое потребление</td><td>Социально-экономическая</td><td>Население ÷ размер семьи</td></tr>
+<tr><td>Сколько покупают / продают</td><td>Экономическая</td><td>Пользователи × частота покупки</td></tr>
+<tr><td>Школы, офисы, здания, классы и т. п.</td><td>Социально-количественная</td><td>Количество объектов × норма</td></tr>
+</tbody></table></div>
+</section>
 
 <div class="tabs" role="tablist" id="tabs"></div>
 <div id="panels"></div>
